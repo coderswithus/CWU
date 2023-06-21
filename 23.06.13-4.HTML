@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_image {
+          position: relative;
+        }
+        .main_image_text {
+          position: absolute;
+          top: 20%;
+          left: 35%;
+          transform: translate( -10%, -10% );
+          font-weight: lighter;
+          color: rgb(255, 255, 255);
+        }
+    </style>
+    <style>
+    fieldset {
+        background-color: opacity;
+        border-radius: 10%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    body {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="main_image" id="background-color">
+        <img src="CWU Wallpaper-Only Blur.jpg" width="100%">
+        <h4 class="main_image_text" style="font-size:30px">
+            <form>
+                <fieldset>
+                    <fieldset>
+                        <legend>Reservation form</legend>
+                        <ul>
+                            <li>
+                                <label for="id">ID</label>
+                                <input type="text" id="id" required>
+                            </li>
+                            <li>
+                                <label for="password">Password</label>
+                                <input type="password" id="pasword" required>
+                            </li>
+                            <li>
+                                <label for="password_r">Re-check password</label>
+                                <input type="password" id="password_r" required>
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email", id="email" required>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Receiving email</legend>
+                        <input type="radio" name="mailing" id="mailing_y">
+                        <label for="mailing_y">Allow mailing</label>
+                        <input type="radio" name="mailing" id="mailing_n">
+                        <label for="mailing_n">Refuse mailing</label>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </h4>
+    </div>
+</body>
+</html>
